@@ -1,0 +1,24 @@
+SMAP
+list_jsp.java
+JSP
+*S JSP
+*F
++ 0 list.jsp
+clientes/list.jsp
++ 1 header.jspf
+clientes/../WEB-INF/jspf/header.jspf
+*L
+5,13:51
+1#1,2:64
+3:66,3
+4:69
+17#0,14:69
+31:83,3
+32:86
+33,6:87,3
+39:105
+40,3:106,3
+43,2:115
+45:117,3
+46,4:120
+*E

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.gov.sp.fatec.users;
+package br.gov.sp.fatec.clientes;
 
 import java.util.ArrayList;
 
@@ -12,18 +12,18 @@ import java.util.ArrayList;
  * @author notebook-user
  */
 public class Db {
-    private static ArrayList<User> users;
-    public static ArrayList<User> getUsers(){
-        if(users == null){
-            users = new ArrayList<>();
-            User admin = new User();
-            admin.setAttributes("Administrador", "admin@empresa.com", "1234");
-            users.add(admin);
+    private static ArrayList<Clientes> clientes;
+    public static ArrayList<Clientes> getClientes(){
+        if(clientes == null){
+            clientes = new ArrayList<>();
+            Clientes cliente01 = new Clientes();
+            cliente01.setAttributes("Fulano da Silva", "111.111.111-11","11.111.111-1","fulano@empresa.com", "(11) 1111.1111","Rua 1, nº 1");
+            clientes.add(cliente01);
             
-            User user = new User();
-            user.setAttributes("Fulano da Silva", "fulano@empresa.com", "1234");
-            users.add(user);
+            Clientes cliente02 = new Clientes();
+            cliente02.setAttributes("Ciclano dos Santos", "222.222.222-22","22.222.222-2","ciclarno@empresa.com", "(22) 2222.2222","Rua 2, nº 2");
+            clientes.add(cliente02);
         }
-        return users;
+        return clientes;
     }
 }

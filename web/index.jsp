@@ -9,12 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Índice - Users WebApp</title>
+        <title>Cadastros</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <h2>Índice</h2>
-        <h3><a href="users/list.jsp">Cadastro de usuários</a></h3>        
+        <h3><a href="clientes/list.jsp">Cadastro de clientes</a></h3>        
         
     </body>
 </html>
