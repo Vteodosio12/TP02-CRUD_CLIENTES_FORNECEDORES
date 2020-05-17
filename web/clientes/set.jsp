@@ -74,5 +74,6 @@
         <script src="../styles/js/jquery.js"></script> 
         <script src="../styles/js/jquery-ui.js"></script> 
         <script src="../styles/js/jquery.maskedinput.min.js"></script> 
+        <script src="../styles/js/validaCpf.js"></script> 
     </body>
 </html>
