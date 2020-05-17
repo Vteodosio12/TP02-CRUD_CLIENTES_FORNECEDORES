@@ -49,7 +49,7 @@
             Telefone:<br />
             <b><%=cliente.getTelefone()%></b><br/>
             Endereço:<br />
-            <b><%=cliente.getEndereco()%></b><br/><br/>
+            <b><%= cliente.getEndereco() %>, Nº <%= cliente.getNumero() %> - <%= cliente.getCidade() %> (<%= cliente.getBairro() %>) - <%= cliente.getUf() %> - <%= cliente.getCep() %></b><br/><br/>
             <input type="submit" name="remove" value="Remover">
         </form>
     </body>

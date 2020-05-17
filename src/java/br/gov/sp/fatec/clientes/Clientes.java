@@ -15,15 +15,25 @@ public class Clientes {
     private String rg;
     private String email;
     private String telefone;
+    private String cep;
+    private String uf;
+    private String cidade;
+    private String bairro;
     private String endereco;
+    private String numero;
 
-    public void setAttributes(String nome, String cpf, String rg, String email, String telefone, String endereco){
+    public void setAttributes(String nome, String cpf, String rg, String email, String telefone, String cep, String uf, String cidade, String bairro, String endereco, String numero){
         this.setNome(nome);
         this.setCpf(cpf);
         this.setRg(rg);
         this.setEmail(email);
         this.setTelefone(telefone);
+        this.setCep(cep);
+        this.setUf(uf);
+        this.setCidade(cidade);
+        this.setBairro(bairro);
         this.setEndereco(endereco);
+        this.setNumero(numero);
     }
     
     public String getNome() {
@@ -65,7 +75,39 @@ public class Clientes {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
+    
+    public String getCep() {
+        return cep;
+    }
 
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+    
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+    
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+    
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+    
     public String getEndereco() {
         return endereco;
     }
@@ -74,4 +116,11 @@ public class Clientes {
         this.endereco = endereco;
     }
     
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
 }

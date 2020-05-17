@@ -17,11 +17,11 @@ public class Db {
         if(clientes == null){
             clientes = new ArrayList<>();
             Clientes cliente01 = new Clientes();
-            cliente01.setAttributes("Fulano da Silva", "111.111.111-11","11.111.111-1","fulano@empresa.com", "(11) 1111.1111","Rua 1, nº 1");
+            cliente01.setAttributes("Fulano da Silva", "111.111.111-11","11.111.111-1","fulano@empresa.com", "(11) 1111.1111","11.111-111","SP", "Praia Grande", "Boqueirão", "Rua 1", "1");
             clientes.add(cliente01);
             
             Clientes cliente02 = new Clientes();
-            cliente02.setAttributes("Ciclano dos Santos", "222.222.222-22","22.222.222-2","ciclarno@empresa.com", "(22) 2222.2222","Rua 2, nº 2");
+            cliente02.setAttributes("Ciclano dos Santos", "222.222.222-22","22.222.222-2","ciclarno@empresa.com", "(22) 2222.2222","22.222-222","SP", "Praia Grande", "Boqueirão", "Rua 2", "2");
             clientes.add(cliente02);
         }
         return clientes;

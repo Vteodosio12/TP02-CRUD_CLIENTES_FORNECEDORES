@@ -35,7 +35,7 @@
                 <td><%= cliente.getRg() %></td>
                 <td><%= cliente.getEmail() %></td>
                 <td><%= cliente.getTelefone() %></td>
-                <td><%= cliente.getEndereco() %></td>
+                <td><%= cliente.getEndereco() %>, Nº <%= cliente.getNumero() %> - <%= cliente.getCidade() %> (<%= cliente.getBairro() %>) - <%= cliente.getUf() %> - <%= cliente.getCep() %> </td>
                 <td>
                     <%int index = Db.getClientes().indexOf(cliente);%>
                     <a href="set.jsp?index=<%=index%>">Alterar</a>
