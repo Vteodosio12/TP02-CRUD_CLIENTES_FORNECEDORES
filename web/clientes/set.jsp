@@ -58,17 +58,21 @@
             Nome:<br />
             <input type="text" name="nome" value="<%=cliente.getNome()%>"/><br/>
             CPF:<br />
-            <input type="text" name="cpf" value="<%=cliente.getCpf()%>"/><br/>
+            <input type="text" name="cpf" id="cpf" value="<%=cliente.getCpf()%>"/><br/>
             RG:<br />
             <input type="text" name="rg" value="<%=cliente.getRg()%>"/><br/>
             Email:<br />
             <input type="email" name="email" value="<%=cliente.getEmail()%>"/><br/>
             Telefone:<br />
-            <input type="text" name="telefone" value="<%=cliente.getTelefone()%>"/><br/>
+            <input type="text" name="telefone" id="celular" value="<%=cliente.getTelefone()%>"/><br/>
             Endereço:<br />
             <input type="text" name="endereco" value="<%=cliente.getEndereco()%>"/><br/>
             <br/>
             <input type="submit" name="set" value="Editar">
         </form>
+            
+        <script src="../styles/js/jquery.js"></script> 
+        <script src="../styles/js/jquery-ui.js"></script> 
+        <script src="../styles/js/jquery.maskedinput.min.js"></script> 
     </body>
 </html>

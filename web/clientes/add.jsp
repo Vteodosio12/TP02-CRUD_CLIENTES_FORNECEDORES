@@ -51,17 +51,21 @@
             Nome:<br />
             <input type="text" name="nome"/><br/>
             CPF:<br />
-            <input type="text" name="cpf"/><br/>
+            <input type="text" name="cpf" id="cpf"/><br/>
             RG:<br />
             <input type="text" name="rg"/><br/>
             Email:<br />
             <input type="email" name="email"/><br/>
             Telefone:<br />
-            <input type="text" name="telefone"/><br/>
+            <input type="text" name="telefone" id="celular"/><br/>
             Endereço:<br />
             <input type="text" name="endereco"/><br/>
             <br/>
             <input type="submit" name="add" value="Adicionar">
         </form>
+        
+        <script src="../styles/js/jquery.js"></script> 
+        <script src="../styles/js/jquery-ui.js"></script> 
+        <script src="../styles/js/jquery.maskedinput.min.js"></script> 
     </body>
 </html>
