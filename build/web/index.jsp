@@ -14,7 +14,8 @@
     <body>
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <h2>Índice</h2>
-        <h3><a href="clientes/list.jsp">Cadastro de clientes</a></h3>        
+        <h3><a href="clientes/list.jsp">Cadastro de Clientes</a></h3>        
+        <h3><a href="fornecedores/list.jsp">Cadastro de Fornecedores</a></h3>        
         
     </body>
 </html>
