@@ -1,4 +1,4 @@
-/* ESTILO PADRÃO */
+
 
 *{
     padding: 0px;
@@ -22,7 +22,7 @@ ul{
     list-style: none;
 }
 
-/* ESTILO ESPECÍFICO */
+
 
 .img-menu{
     width: 40px;

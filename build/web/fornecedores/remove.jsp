@@ -39,6 +39,7 @@
         <div style="color:red"><%=error%></div>
         <%}%>
         
+        <div style="background-color: #FFF">
         <form method="post">
             Razao Social:<br />
             <b><%=fornecedor.getRazaoSocial()%></b><br/>
@@ -60,7 +61,9 @@
             <b><%=fornecedor.getEndereco()%></b><br/><br/>
             Numero:<br />
             <b><%=fornecedor.getNumero()%></b><br/><br/>
-            <input type="submit" name="remove" value="Remover">
+            <input type="submit" class="btn btn-primary" name="remove" value="Remover">
         </form>
+        
+        </div>
     </body>
 </html>

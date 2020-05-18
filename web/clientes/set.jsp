@@ -65,21 +65,22 @@
         <div style="color:red"><%=error%></div>
         <%}%>
         
+        <div style="background-color: #FFF">
         <form method="post">
             Nome:<br />
-            <input type="text" name="nome" value="<%=cliente.getNome()%>"/><br/>
+            <input class="form-control" type="text" name="nome" value="<%=cliente.getNome()%>"/><br/>
             CPF:<br />
-            <input type="text" name="cpf" id="cpf" value="<%=cliente.getCpf()%>"/><br/>
+            <input class="form-control" type="text" name="cpf" id="cpf" value="<%=cliente.getCpf()%>"/><br/>
             RG:<br />
-            <input type="text" name="rg" value="<%=cliente.getRg()%>"/><br/>
+            <input class="form-control" type="text" name="rg" value="<%=cliente.getRg()%>"/><br/>
             Email:<br />
-            <input type="email" name="email" value="<%=cliente.getEmail()%>"/><br/>
+            <input class="form-control" type="email" name="email" value="<%=cliente.getEmail()%>"/><br/>
             Telefone:<br />
-            <input type="text" name="telefone" id="celular" value="<%=cliente.getTelefone()%>"/><br/>
+            <input class="form-control" type="text" name="telefone" id="celular" value="<%=cliente.getTelefone()%>"/><br/>
             CEP:<br />
-            <input type="text" name="cep" id="cep" onblur="pesquisacep(this.value);"  value="<%=cliente.getCep()%>"/><br/>
+            <input class="form-control" type="text" name="cep" id="cep" onblur="pesquisacep(this.value);"  value="<%=cliente.getCep()%>"/><br/>
             UF:<br />
-            <select name="uf" id="UF" class="form-control">
+            <select class="form-control" name="uf" id="UF" class="form-control">
                 <option value="">Selecionar</option>
                 <option value="AC" <%if(cliente.getUf()=="AC"){%>selected<%}%>>AC</option>
                 <option value="AL" <%if(cliente.getUf()=="AL"){%>selected<%}%>>AL</option>
@@ -109,16 +110,17 @@
                 <option value="TO" <%if(cliente.getUf()=="TO"){%>selected<%}%>>TO</option>
             </select><br />
             Cidade:<br />
-            <input type="text" name="cidade" id="Cidade" value="<%=cliente.getCidade()%>"/><br/>
+            <input class="form-control" type="text" name="cidade" id="Cidade" value="<%=cliente.getCidade()%>"/><br/>
             Bairro:<br />
-            <input type="text" name="bairro" id="Bairro" value="<%=cliente.getBairro()%>"/><br/>
+            <input class="form-control" type="text" name="bairro" id="Bairro" value="<%=cliente.getBairro()%>"/><br/>
             Endereço:<br />
-            <input type="text" name="endereco" value="<%=cliente.getEndereco()%>"/><br/>
+            <input class="form-control" type="text" name="endereco" value="<%=cliente.getEndereco()%>"/><br/>
             Número:<br />
-            <input type="text" name="numero" value="<%=cliente.getNumero()%>"/><br/>
+            <input class="form-control" type="text" name="numero" value="<%=cliente.getNumero()%>"/><br/>
             <br/>
-            <input type="submit" name="set" value="Editar">
+            <input type="submit" class="btn btn-primary" name="set" value="Editar">
         </form>
+        </div>
             
         <script src="../styles/js/jquery.js"></script> 
         <script src="../styles/js/jquery-ui.js"></script> 

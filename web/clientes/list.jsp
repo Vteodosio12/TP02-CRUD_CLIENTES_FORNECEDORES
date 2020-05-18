@@ -17,10 +17,13 @@
     </head>
     <body>
         <%@include file="../WEB-INF/jspf/header.jspf" %>
+        <div class="step">
         <h2>Clientes</h2>
-        <h3><a href="add.jsp">Cadastrar clientes</a></h3>
+        <a class="btn btn-primary" href="add.jsp">Cadastrar clientes</a>
+        <br/><br/>
         
-        <table border="1">
+        <table class="table table-hover table-stripped" style="background-color: #FFFFFF">
+            <thead>
             <tr>
                 <th>Nome</th>
                 <th>CPF</th>
@@ -30,6 +33,7 @@
                 <th>Endereço</th>
                 <th>Comandos</th>
             </tr>
+            </thead>
             <%for(Clientes cliente: Db.getClientes()){%>
             <tr>
                 <td><%= cliente.getNome() %></td>
@@ -40,11 +44,13 @@
                 <td><%= cliente.getEndereco() %>, Nº <%= cliente.getNumero() %> - <%= cliente.getCidade() %> (<%= cliente.getBairro() %>) - <%= cliente.getUf() %> - <%= cliente.getCep() %> </td>
                 <td>
                     <%int index = Db.getClientes().indexOf(cliente);%>
-                    <a href="set.jsp?index=<%=index%>">Alterar</a>
-                    <a href="remove.jsp?index=<%=index%>">Excluir</a>
+                    <a class="btn btn-warning" href="set.jsp?index=<%=index%>">Alterar</a>
+                    <br/><br/>
+                    <a class="btn btn-danger" href="remove.jsp?index=<%=index%>">Excluir</a>
                 </td>
             </tr>
             <%}%>
         </table>
+        </step>
     </body>
 </html>

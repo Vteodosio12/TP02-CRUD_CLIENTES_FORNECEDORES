@@ -35,6 +35,7 @@
         <h2><a href="list.jsp">Clientes</a></h2>
         <h3>Remover Cliente?</h3>
         
+        <div style="background-color: #FFF">
         <%if(error != null){%>
         <div style="color:red"><%=error%></div>
         <%}%>
@@ -52,7 +53,8 @@
             <b><%=cliente.getTelefone()%></b><br/>
             Endereço:<br />
             <b><%= cliente.getEndereco() %>, Nº <%= cliente.getNumero() %> - <%= cliente.getCidade() %> (<%= cliente.getBairro() %>) - <%= cliente.getUf() %> - <%= cliente.getCep() %></b><br/><br/>
-            <input type="submit" name="remove" value="Remover">
+            <input type="submit" class="btn btn-danger" name="remove" value="Remover">
         </form>
+        </div>
     </body>
 </html>

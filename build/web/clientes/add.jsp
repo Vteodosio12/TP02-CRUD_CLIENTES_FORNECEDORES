@@ -57,22 +57,22 @@
         <%if(error != null){%>
         <div style="color:red"><%=error%></div>
         <%}%>
-        
+        <div style="background-color: #FFF">
         <form method="post">
             Nome:<br />
-            <input type="text" name="nome"/><br/>
+            <input type="text" class="form-control" name="nome"/><br/>
             CPF:<br />
-            <input type="text" name="cpf" id="cpf"/><br/>
+            <input type="text" class="form-control" name="cpf" id="cpf"/><br/>
             RG:<br />
-            <input type="text" name="rg"/><br/>
+            <input type="text" class="form-control" name="rg"/><br/>
             Email:<br />
-            <input type="email" name="email"/><br/>
+            <input type="email" class="form-control" name="email"/><br/>
             Telefone:<br />
-            <input type="text" name="telefone" id="celular"/><br/>
+            <input type="text" class="form-control" name="telefone" id="celular"/><br/>
             CEP:<br />
-            <input type="text" name="cep" id="cep" onblur="pesquisacep(this.value);" /><br/>
+            <input type="text" class="form-control" name="cep" id="cep" onblur="pesquisacep(this.value);" /><br/>
             UF:<br />
-            <select name="uf" id="UF" class="form-control">
+            <select name="uf" class="form-control" id="UF" class="form-control">
                 <option value="">Selecionar</option>
                 <option value="AC">AC</option>
                 <option value="AL">AL</option>
@@ -102,17 +102,18 @@
                 <option value="TO">TO</option>
             </select><br />
             Cidade:<br />
-            <input type="text" name="cidade" id="Cidade" /><br/>
+            <input type="text" class="form-control" name="cidade" id="Cidade" /><br/>
             Bairro:<br />
-            <input type="text" name="bairro" id="Bairro" /><br/>
+            <input type="text" class="form-control" name="bairro" id="Bairro" /><br/>
             Endereço:<br />
-            <input type="text" name="endereco" id="Endereco" /><br/>
+            <input type="text" class="form-control" name="endereco" id="Endereco" /><br/>
             Número:<br />
-            <input type="text" name="numero"/><br/>
+            <input type="text" class="form-control" name="numero"/><br/>
             <br/>
-            <input type="submit" name="add" value="Adicionar">
+            <input type="submit" class="btn btn-primary" name="add" value="Adicionar">
         </form>
         
+        </div>
         <script src="../styles/js/jquery.js"></script> 
         <script src="../styles/js/jquery-ui.js"></script> 
         <script src="../styles/js/jquery.maskedinput.min.js"></script> 

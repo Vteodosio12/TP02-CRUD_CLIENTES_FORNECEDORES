@@ -18,9 +18,11 @@
     <body>
         <%@include file="../WEB-INF/jspf/header.jspf" %>
         <h2>Fornecedores</h2>
-        <h3><a href="add.jsp">Cadastrar Fornecedores</a></h3>
+        <a class="btn btn-primary" href="add.jsp">Cadastrar Fornecedores</a>
+        <br/><br/>
         
-        <table border="1">
+        <table class="table table-hover table-stripped" style="background-color: #FFFFFF">
+            <thead>
             <tr>
                 <th>Razão Social</th>
                 <th>CNPJ</th>                
@@ -34,6 +36,7 @@
                 <th>Número</th>
                 <th>Comandos</th>
             </tr>
+            </thead>
             <%for(Fornecedores fornecedor: Db.getFornecedores()){%>
             <tr>
                 <td><%= fornecedor.getRazaoSocial() %></td>
@@ -48,8 +51,8 @@
                 <td><%= fornecedor.getNumero() %></td>
                 <td>                    
                     <%int index = Db.getFornecedores().indexOf(fornecedor);%>
-                    <a href="set.jsp?index=<%=index%>">Alterar</a>
-                    <a href="remove.jsp?index=<%=index%>">Excluir</a>
+                    <a class="btn btn-warning" href="set.jsp?index=<%=index%>">Alterar</a>
+                    <a class="btn btn-danger" href="remove.jsp?index=<%=index%>">Excluir</a>
                 </td>
             </tr>
             <%}%>

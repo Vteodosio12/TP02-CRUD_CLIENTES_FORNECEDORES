@@ -64,29 +64,31 @@
         <div style="color:red"><%=error%></div>
         <%}%>
         
+        <div style="background-color: #FFF">
         <form method="post">
             Nome:<br />
-            <input type="text" name="razaoSocial" value="<%=fornecedor.getRazaoSocial()%>"/><br/>
+            <input type="text" class="form-control" name="razaoSocial" value="<%=fornecedor.getRazaoSocial()%>"/><br/>
             CPF:<br />
-            <input type="text" name="cnpj" value="<%=fornecedor.getCnpj()%>"/><br/>            
+            <input type="text" class="form-control" name="cnpj" value="<%=fornecedor.getCnpj()%>"/><br/>            
             Email:<br />
-            <input type="email" name="email" value="<%=fornecedor.getEmail()%>"/><br/>
+            <input type="email" class="form-control" name="email" value="<%=fornecedor.getEmail()%>"/><br/>
             Telefone:<br />
-            <input type="text" name="telefone" value="<%=fornecedor.getTelefone()%>"/><br/>
+            <input type="text" class="form-control" name="telefone" value="<%=fornecedor.getTelefone()%>"/><br/>
             Cep:<br />
-            <input type="text" name="cep" value="<%=fornecedor.getCep()%>"/><br/>
+            <input type="text" class="form-control" name="cep" value="<%=fornecedor.getCep()%>"/><br/>
             UF:<br />
-            <input type="text" name="uf" value="<%=fornecedor.getUf()%>"/><br/>
+            <input type="text" class="form-control" name="uf" value="<%=fornecedor.getUf()%>"/><br/>
             Cidade:<br />
-            <input type="text" name="cidade" value="<%=fornecedor.getCidade()%>"/><br/>
+            <input type="text" class="form-control" name="cidade" value="<%=fornecedor.getCidade()%>"/><br/>
             Bairro:<br />
-            <input type="text" name="bairro" value="<%=fornecedor.getBairro()%>"/><br/>
+            <input type="text" class="form-control" name="bairro" value="<%=fornecedor.getBairro()%>"/><br/>
             Endereço:<br />
-            <input type="text" name="endereco" value="<%=fornecedor.getEndereco()%>"/><br/>
+            <input type="text" class="form-control" name="endereco" value="<%=fornecedor.getEndereco()%>"/><br/>
             Numero:<br />
-            <input type="text" name="numero" value="<%=fornecedor.getNumero()%>"/><br/>
+            <input type="text" class="form-control" name="numero" value="<%=fornecedor.getNumero()%>"/><br/>
             <br/>
-            <input type="submit" name="set" value="Editar">
+            <input type="submit" class="btn btn-primary" name="set" value="Editar">
         </form>
+    </div>
     </body>
 </html>

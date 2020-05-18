@@ -57,29 +57,31 @@
         <div style="color:red"><%=error%></div>
         <%}%>
         
+        <div style="background-color: #FFF">
         <form method="post">
             Razão Social:<br />
-            <input type="text" name="razaoSocial"/><br/>
+            <input type="text" class="form-control" name="razaoSocial"/><br/>
             CNPJ:<br />
-            <input type="text" name="cnpj"/><br/>            
+            <input type="text" class="form-control" name="cnpj"/><br/>            
             Email:<br />
-            <input type="email" name="email"/><br/>
+            <input type="email" class="form-control" name="email"/><br/>
             Telefone:<br />
-            <input type="text" name="telefone"/><br/>
+            <input type="text" class="form-control" name="telefone"/><br/>
             Cep:<br />
-            <input type="text" name="cep"/><br/>
+            <input type="text" class="form-control" name="cep"/><br/>
             UF:<br />
-            <input type="text" name="uf"/><br/>
+            <input type="text" class="form-control" name="uf"/><br/>
             Cidade:<br />
-            <input type="text" name="cidade"/><br/>
+            <input type="text" class="form-control" name="cidade"/><br/>
             Bairro:<br />
-            <input type="text" name="bairro"/><br/>
+            <input type="text" class="form-control" name="bairro"/><br/>
             Endereço:<br />
-            <input type="text" name="endereco"/><br/>
+            <input type="text" class="form-control" name="endereco"/><br/>
             Numero:<br />
-            <input type="text" name="numero"/><br/>
+            <input type="text" class="form-control" name="numero"/><br/>
             <br/>
-            <input type="submit" name="add" value="Adicionar">
+            <input type="submit" class="btn btn-primary" name="add" value="Adicionar">
         </form>
+        </div>
     </body>
 </html>
