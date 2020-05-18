@@ -26,6 +26,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/styles/css/style.css">
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/styles/css/bootstrap.css">
         <title>Remover Cliente</title>
     </head>
     <body>

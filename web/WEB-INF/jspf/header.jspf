@@ -1,3 +1,32 @@
-<%-- any content can be specified here e.g.: --%>
-<%@ page pageEncoding="UTF-8" %>
-<h1><a href="<%= request.getContextPath() %>/index.jsp">Users WebApp</a></h1>
+
+<%@ page language="java" pageEncoding="UTF-8" %>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    
+    <body>
+        <!--<link rel="stylesheet" href="<%= request.getContextPath() %>styles/css/style.css">
+        <link rel="stylesheet" href="<%= request.getContextPath() %>styles/css/bootstrap.css">-->
+        <input type="checkbox" id="check" class="check-menu">
+        <label for="check">
+            <img class="img-menu" src="<%= request.getContextPath() %>/styles/icon-main.png">
+        </label>
+        <nav>
+            <ul>
+                <li><a href="<%= request.getContextPath() %>/index.jsp" class="link-menu">HOME</a></li>
+                <li><a href="<%= request.getContextPath() %>/about.jsp" class="link-menu">SOBRE</a></li>
+                <li><a href="<%= request.getContextPath() %>/clientes/list.jsp" class="link-menu">CLIENTES</a></li>
+                <li><a href="<%= request.getContextPath() %>/fornecedores/list.jsp" class="link-menu">FORNECEDORES</a></li>
+            </ul>
+        </nav>
+            <pre>
+                
+            </pre>
+            
+            
+    </body>
+    
+</html>

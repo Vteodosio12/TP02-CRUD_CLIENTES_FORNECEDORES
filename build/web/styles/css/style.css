@@ -1,0 +1,84 @@
+/* ESTILO PADRÃO */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: arial;
+    background-image: url("../../styles/wallpaper3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ul{
+    list-style: none;
+}
+
+/* ESTILO ESPECÍFICO */
+
+.img-menu{
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+nav{
+    width: 200px;
+    height: 100%;
+    left: -350px;
+    position: fixed;
+    transition: all .8s;
+}
+
+.check-menu:checked ~ nav{
+    transform: translateX(350px);
+}
+
+ul{
+    background-color: transparent;
+    top: 55px;
+    position: absolute;
+    width: 100%;
+}
+
+.link-menu{
+    display: block;
+    padding: 20px 5px;
+    background-color: #dbdee1;
+    /*color:#007bff;*/
+}
+
+.link-menu:hover{
+    background-color: #007bff;
+    color: #dbdee1;
+}
+
+label{
+    
+    padding: 12px;
+    position: fixed;
+    z-index: 1;
+}
+
+dd, dl, .info{
+    color: #007bff;
+    padding: 0px 20px;
+    position: static;
+    font-size: 10pt;
+    width: 680px;
+    text-align: justify;
+}
+
+.body-index{
+    background-image: url("../../styles/wallpaper4.jpg");
+}
