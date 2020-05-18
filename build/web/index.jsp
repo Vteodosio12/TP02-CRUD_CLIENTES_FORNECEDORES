@@ -11,17 +11,6 @@
     </head>
     <body class="body-index">
         <%@include file="WEB-INF/jspf/header.jspf" %>
-        <!--<input type="checkbox" id="check" class="check-menu">
-        <label for="check">
-            <img class="img-menu" src="styles/icon-main.png">
-        </label>
-        <nav>
-            <ul>
-                <li><a href="" class="link-menu">HOME</a></li>
-                <li><a href="" class="link-menu">SOBRE</a></li>
-                <li><a href="" class="link-menu">CLIENTES</a></li>
-                <li><a href="" class="link-menu">FORNECEDORES</a></li>
-            </ul>
-        </nav>-->
+        
     </body>
 </html>
